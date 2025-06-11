@@ -110,7 +110,7 @@ body {
   }
   
   .ft a:hover {
-    color: #90EE90;
+    color: blue;
   }
   
   .cp-right {
@@ -123,11 +123,6 @@ body {
       flex-direction: column;
       gap: 2rem;
       align-items: center;
-    }
-  
-    .ft-section {
-      width: 100%;
-      max-width: 300px;
     }
   }
   
