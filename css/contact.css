@@ -1,0 +1,58 @@
+.contact-hero {
+    text-align: center;
+}
+
+.contact-hero h1{
+    font-size: 2rem;
+    padding-top: 2rem;
+    margin: 1rem 0;
+    color: green;
+}
+
+.contact-form-section {
+    max-width: 800px;
+    margin: 0 auto  3rem;
+    padding: 0 1.5rem;
+}
+
+.contact-form {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.submit-btn {
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    background-color: green;
+}
+
+.submit-btn:hover {
+    background-color: #034103;
+}
