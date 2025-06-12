@@ -1,0 +1,94 @@
+body{
+    background-color: rgb(248, 248, 248);
+}
+.about-hero {
+    color: green;
+    text-align: center;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px lightblue;
+    margin-top: -10px;
+    margin-bottom: -20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    color: green;
+    font-size: 1.3rem;
+}
+
+.team-section {
+    background-color: #fcfcfc;
+    padding: 1.3rem 0;
+    margin: 3rem 0;
+}
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member:hover {
+    transform: translateY(-7px);
+}
+
+.member-img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.member-img img {
+    width: 100%;
+}
+
+.team-member h3, .team-member p{
+    margin: 0.3rem 0;
+}
+
+.testimonials-section {
+    background-color: #fcfcfc;
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.testimonial {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1.5rem;
+}
+
+.testimonial:last-child {
+    margin-bottom: 0;
+}
+
+.quote {
+    font-style: italic;
+    color: rgb(97, 96, 96);
+}
+
+.author {
+    text-align: right;
+    font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+    
+    .team-grid {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        gap: 1.5rem;
+    }
+    .container {
+        padding: 0 2rem;
+    }
+}
