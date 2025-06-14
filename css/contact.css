@@ -56,3 +56,21 @@
 .submit-btn:hover {
     background-color: #034103;
 }
+
+/* Form success message */
+.form-success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    display: none;
+}
+
+/* Responsive for button resize */
+@media (max-width: 768px) {
+    .submit-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
