@@ -40,11 +40,15 @@ body {
   /* Hero Section */
   .hero {
     text-align: center;
-    padding: 4rem 2rem;
+    padding: 3rem 2rem;
     background: url('../assets/bg.jpg') center/cover;
     color: #fff;
   }
   
+  .hero h1{
+    color: #008000
+  }
+
   .hero-txt {
     max-width: 800px;
     margin: 1rem auto;
