@@ -1,4 +1,10 @@
-
+.faq-hero {
+    width: 100%;
+    padding: 3rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .faq-hero h1 {
     font-size: 3rem;
