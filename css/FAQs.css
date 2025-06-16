@@ -86,3 +86,108 @@
     }
     
 }
+
+/* ... existing code ... */
+
+.faq-toggle-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.faq-toggle-buttons button {
+    background-color: #ffffff;
+    color: green;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.faq-toggle-buttons button:hover {
+    background-color: #12d653;
+}
+
+.faq-toggle-buttons button.active {
+    background-color: #b7b9b7;
+    border: 2px solid #f3f4f5;
+}
+
+.chatbot-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.chatbot-container {
+    display: flex;
+    flex-direction: column;
+    height: 500px; /* Adjust as needed */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.chat-messages {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-message {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+
+.user-message {
+    align-self: flex-end;
+    background-color: #dcf8c6;
+    color: #333;
+}
+
+.bot-message {
+    align-self: flex-start;
+    background-color: #cec9c9;
+    color: #333;
+}
+
+.chat-input-area {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    background-color: #f1f1f1;
+}
+
+.chat-input-area input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.chat-input-area button {
+    background-color: #089a12;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.chat-input-area button:hover {
+    background-color: #106518;
+}

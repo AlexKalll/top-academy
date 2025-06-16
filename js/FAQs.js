@@ -4,6 +4,26 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Load chatbot component
     loadChatbot();
+
+    const showFaqsButton = document.getElementById('show-faqs');
+    const showAssistantButton = document.getElementById('show-assistant');
+    const faqSection = document.getElementById('faq-section');
+    const chatbotSection = document.getElementById('chatbot-section');
+ 
+
+    showFaqsButton.addEventListener('click', () => {
+        faqSection.style.display = 'block';
+        chatbotSection.style.display = 'none';
+        showFaqsButton.classList.add('active');
+        showAssistantButton.classList.remove('active');
+    });
+
+    showAssistantButton.addEventListener('click', () => {
+        faqSection.style.display = 'none';
+        chatbotSection.style.display = 'block';
+        showFaqsButton.classList.remove('active');
+        showAssistantButton.classList.add('active');
+    });
 });
 
 function initFaqAccordion() {
@@ -30,17 +50,16 @@ function initFaqAccordion() {
 }
 
 function loadChatbot() {
-    const chatbotPlaceholder = document.getElementById('chatbot-placeholder');
+    // Change target from chatbotPlaceholder to chatbotSection
+    const chatbotSection = document.getElementById('chatbot-section');
     
-    if (chatbotPlaceholder) {
-        fetch('../components/chatbot.html')
+    if (chatbotSection) {
+        fetch('/top-academy/components/chatbot.html')
             .then(response => response.text())
             .then(html => {
-                chatbotPlaceholder.innerHTML = html;
-                
-                // Initialize chatbot functionality after loading the component
+                chatbotSection.innerHTML = html; 
                 const script = document.createElement('script');
-                script.src = '../js/chatbot.js';
+                script.src = '/top-academy/js/chatbot.js';
                 document.body.appendChild(script);
             })
             .catch(error => {

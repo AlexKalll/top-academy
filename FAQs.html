@@ -13,10 +13,14 @@
         
         <main class="main">
             <section class="faq-hero">
-                <h1>Frequently Asked Questions (FAQs)</h1>
+                <!-- <h1>Frequently Asked Questions (FAQs)</h1> -->
+                <div class="faq-toggle-buttons">
+                    <button id="show-faqs" class="active">FAQs❓</button>
+                    <button id="show-assistant">Assistant🤖</button>
+                </div>
             </section>
             
-            <section class="faq-section">
+            <section id="faq-section" class="faq-section">
                 <div class="faq-container">
                     <div class="faq-item">
                         <div class="faq-question">
@@ -79,10 +83,12 @@
                     </div>
                 </div>
             </section>
+            <section class="chatbot-section" id="chatbot-section" style="display: none;">
+            </section>
         </main>
         
         <div id="footer-placeholder"></div>
-        <div id="chatbot-placeholder"></div>
+        <!-- <div id="chatbot-placeholder"></div> -->
     </div>
     
     <script src="js/scripts.js"></script>
