@@ -63,35 +63,35 @@ Open the `home.html` file in your web browser to view the website. You can navig
 ## Project Structure
 
 ```
-.gitignore
-README.md
-assets/
-├── bg.jpg
-├── logo.png
-└── team_profile.jpg
-components/
-├── chatbot.html
-├── footer.html
-└── header.html
-css/
-├── FAQs.css
-├── about.css
-├── contact.css
-├── services.css
-└── styles.css
-js/
-├── FAQs.js
-├── about.js
-├── chatbot.js
-├── contact.js
-├── scripts.js
-└── services.js
-pages/
+top-academy/
 ├── FAQs.html
 ├── about.html
 ├── contact.html
-├── home.html
-└── services.html
+├── index.html    # Home page 
+├── services.html
+├──assets/
+    ├── bg.jpg
+    ├── logo.png
+    └── team_profile.jpg
+├──components/
+    ├── chatbot.html
+    ├── footer.html
+    └── header.html
+├──css/
+    ├── FAQs.css
+    ├── about.css
+    ├── contact.css
+    ├── services.css
+    └── styles.css
+├──js/
+    ├── FAQs.js
+    ├── about.js
+    ├── chatbot.js
+    ├── contact.js
+    ├── scripts.js
+    └── services.js
+├──.gitignore
+└──README.md
 ```
 
 ## Contact
@@ -100,7 +100,7 @@ For any inquiries or support, please reach out to us at:
 
 -   **Email:** info@topacademy.com
 -   **Phone:** +1 (123) 456-7890
--   **Website:** [www.topacademy.com](http://www.topacademy.com) (Placeholder)
+-   **Website:** https://alexkalll.github.io/top-academy
 
 ---
 
