@@ -10,6 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    loadComponent('header-placeholder', '../components/header.html');
-    loadComponent('footer-placeholder', '../components/footer.html');
+    loadComponent('header-placeholder', '/top-academy/components/header.html');
+    loadComponent('footer-placeholder', '/top-academy/components/footer.html');
 });
