@@ -1,19 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="chatbot-container">
-        <div class="chat-messages" id="chat-messages">
-            <!-- Chat messages will appear here -->
-        </div>
-        <div class="chat-input-area">
-            <input type="text" id="chat-input" placeholder="Type your question...">
-            <button id="send-button">Send</button>
-        </div>
-    </div>
-</body>
-</html>
+<!-- Chatbot Widget Fragment -->
+<div class="chatbot-widget" id="chatbot-widget" aria-live="polite" aria-label="Top Academy Assistant">
+	<button class="chatbot-toggle" id="chatbot-toggle" aria-expanded="false" aria-controls="chatbot-panel">💬</button>
+	<div class="chatbot-panel" id="chatbot-panel" hidden>
+		<div class="chatbot-header">
+			<div class="chatbot-title">Top Academy Assistant</div>
+			<div class="chatbot-actions">
+				<button class="chatbot-key-btn" id="chatbot-key-btn" title="Set API Key">🔑</button>
+				<button class="chatbot-close" id="chatbot-close" aria-label="Close">✕</button>
+			</div>
+		</div>
+		<div class="chatbot-messages" id="chat-messages"></div>
+		<div class="chatbot-input-area">
+			<input type="text" id="chat-input" class="chatbot-input" placeholder="Ask anything about Top Academy..." aria-label="Message input">
+			<button id="send-button" class="chatbot-send">Send</button>
+		</div>
+	</div>
+</div>

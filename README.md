@@ -98,8 +98,8 @@ top-academy/
 
 For any inquiries or support, please reach out to us at:
 
--   **Email:** info@topacademy.com
--   **Phone:** +1 (123) 456-7890
+-   **Email:** contact@topacademy.et
+-   **Phone:** +251 909146096
 -   **Website:** https://alexkalll.github.io/top-academy
 
 ---

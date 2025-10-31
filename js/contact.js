@@ -1,5 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contactForm');
+
+    // Prefill message from ?service=
+    try {
+        const usp = new URLSearchParams(window.location.search);
+        const service = (usp.get('service') || '').trim();
+        if (service) {
+            const msg = document.getElementById('message');
+            if (msg) {
+                msg.value = `Hello Top Academy, I’m interested in ${service}.\n\nHere are a few details about me/our needs:`;
+                msg.focus();
+            }
+        }
+    } catch (_) {}
     
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {

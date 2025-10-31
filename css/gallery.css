@@ -1,0 +1,104 @@
+/* Gallery Coming Soon Styles */
+.gallery-hero {
+	text-align: center;
+	padding: 3rem 1.5rem 1rem;
+}
+
+.gallery-hero h1 {
+	margin: 0 0 0.25rem 0;
+	color: #008000;
+}
+
+.gallery-hero p {
+	margin: 0;
+	color: #555;
+}
+
+.coming-soon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 3rem 1.5rem 4rem;
+}
+
+.coming-card {
+	width: 100%;
+	max-width: 720px;
+	background: #fff;
+	border-radius: 16px;
+	box-shadow: 0 20px 48px rgba(0,0,0,0.08);
+	padding: 2rem;
+	text-align: center;
+}
+
+.coming-illustration {
+	position: relative;
+	height: 160px;
+	margin: 0 auto 1rem;
+	width: 160px;
+}
+
+.logo-dot {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 20px;
+	height: 20px;
+	background: #008000;
+	border-radius: 50%;
+	box-shadow: 0 0 0 6px rgba(0,128,0,0.12);
+}
+
+.orbit {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border: 2px dashed rgba(0,0,0,0.08);
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+	animation: spin 12s linear infinite;
+}
+
+.orbit-1 { width: 120px; height: 120px; animation-duration: 10s; }
+.orbit-2 { width: 160px; height: 160px; animation-duration: 14s; }
+.orbit-3 { width: 200px; height: 200px; animation-duration: 18s; }
+
+@keyframes spin {
+	from { transform: translate(-50%, -50%) rotate(0deg); }
+	to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.coming-card h2 {
+	margin: 0.25rem 0 0.5rem;
+	font-size: 1.6rem;
+}
+
+.coming-card p {
+	margin: 0 0 1rem;
+	color: #555;
+}
+
+.notify-btn {
+	display: inline-block;
+	background: #008000;
+	color: #fff;
+	text-decoration: none;
+	padding: 0.6rem 1.1rem;
+	border-radius: 10px;
+	transition: transform 0.15s ease, box-shadow 0.2s ease;
+	box-shadow: 0 8px 18px rgba(0,128,0,0.18);
+}
+
+.notify-btn:hover {
+	transform: translateY(-1px);
+	box-shadow: 0 10px 24px rgba(0,128,0,0.22);
+}
+
+@media (max-width: 540px) {
+	.coming-card { padding: 1.25rem; }
+	.coming-illustration { width: 120px; height: 120px; }
+	.orbit-1 { width: 90px; height: 90px; }
+	.orbit-2 { width: 130px; height: 130px; }
+	.orbit-3 { width: 170px; height: 170px; }
+}

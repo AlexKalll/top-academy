@@ -8,33 +8,62 @@ body {
     background: #fff;
   }
   
+  /* Keep content visible under fixed header */
+  body { padding-top: 64px; }
+
   /* Header Styles */
   .hd {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background: #e3e0e0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 0.6rem 1rem;
+    background: rgba(227, 224, 224, 0.92);
+    backdrop-filter: saturate(180%) blur(8px);
+    -webkit-backdrop-filter: saturate(180%) blur(8px);
+    border-bottom: 1px solid #e9e9e9;
   }
   
   .lg-img {
-    height: 50px;
+    height: 36px;
   }
   
   .nav {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
   }
   
   .nav-link {
+    position: relative;
     text-decoration: none;
     color: #333;
     font-weight: 500;
+    padding: 0.25rem 0;
   }
   
   .nav-link:hover {
     color: #008000;
+  }
+  
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -4px;
+    margin: 0 auto;
+    width: 0;
+    height: 2px;
+    background: #008000;
+    transition: width 0.2s ease;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
   }
   
   /* Hero Section */
@@ -129,4 +158,168 @@ body {
       align-items: center;
     }
   }
+  
+/* Chatbot Widget */
+.chatbot-widget {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+}
+
+.chatbot-toggle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  background: #008000;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  position: relative;
+  z-index: 10001;
+}
+
+.chatbot-panel {
+  position: absolute;
+  right: 0;
+  bottom: 72px;
+  width: 340px;
+  height: 460px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 10000;
+}
+
+.chatbot-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0.9rem;
+  background: #e3e0e0;
+}
+
+.chatbot-title {
+  font-weight: 700;
+}
+
+.chatbot-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.chatbot-close,
+.chatbot-key-btn {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.chatbot-messages {
+  flex: 1;
+  padding: 0.9rem;
+  overflow-y: auto;
+  background: #f7f7f7;
+}
+
+.chat-message {
+  max-width: 80%;
+  padding: 0.55rem 0.7rem;
+  border-radius: 12px;
+  margin: 0.35rem 0;
+  white-space: pre-wrap;
+}
+
+.user-message {
+  margin-left: auto;
+  background: #008000;
+  color: #fff;
+}
+
+.bot-message {
+  margin-right: auto;
+  background: #ffffff;
+  color: #333;
+  border: 1px solid #ececec;
+}
+
+.chat-message.typing {
+  font-style: italic;
+  color: #666;
+}
+
+.chatbot-input-area {
+  display: flex;
+  gap: 8px;
+  padding: 0.75rem;
+  background: #fff;
+  border-top: 1px solid #eee;
+}
+
+.chatbot-input {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.55rem 0.7rem;
+  font-size: 14px;
+}
+
+.chatbot-send {
+  background: #008000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.55rem 0.9rem;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .chatbot-panel { width: 90vw; height: 60vh; }
+}
+  
+/* Ensure hidden attribute takes effect for chatbot panel */
+.chatbot-panel[hidden] { display: none !important; }
+  
+/* Home Testimonials */
+.home-testimonials {
+  padding: 3rem 2rem;
+  background: #f8f9fb;
+}
+.home-testimonials-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+.home-testimonials h2 {
+  margin: 0 0 1.25rem;
+  color: #008000;
+}
+.home-testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+.home-testimonial {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+  text-align: left;
+}
+.home-quote {
+  margin: 0 0 0.75rem;
+  color: #333;
+  line-height: 1.6;
+}
+.home-author {
+  margin: 0;
+  color: #666;
+  font-size: 0.95rem;
+}
   
