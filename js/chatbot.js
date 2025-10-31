@@ -194,13 +194,13 @@
 			typing.remove();
 			const msg = String(err && err.message || err);
 			if (msg.includes('Missing API key')) {
-				appendMessage('No API key found. Click the key icon (🔑), or define one in js/config.js as window.__GROQ_API_KEY__ = "..." or a <meta name="groq-api-key" content="..."> tag.', 'bot');
+				appendMessage('No API key found. Click the key icon (🔑) to set a Groq API key and know more about Top Academy.', 'bot');
 			} else if (msg.includes('401')) {
-				appendMessage('Unauthorized (401). Your API key may be invalid. Click 🔑 to update it.', 'bot');
+				appendMessage('Unauthorized (401). Your API key may be invalid. Click 🔑 to update it and know more about Top Academy.', 'bot');
 			} else if (location.protocol === 'file:') {
-				appendMessage('Network error. When using file://, some browsers block requests. Please run a local server (e.g., python -m http.server) and try again.', 'bot');
+				appendMessage('Network error. When using file:// , some browsers block requests. Please run a local server (e.g., python -m http.server) and try again.', 'bot');
 			} else {
-				appendMessage('Sorry, I could not get a response. Please try again later.', 'bot');
+				appendMessage('Sorry, I could not get a response. Please try again later and know more about Top Academy.', 'bot');
 			}
 		}
 	}
